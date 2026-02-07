@@ -32766,7 +32766,7 @@ return s},
 agY(){var s=0,r=A.v(t.H),q,p,o,n,m,l,k
 var $async$agY=A.q(function(a,b){if(a===1)return A.r(b,r)
 while(true)switch(s){case 0:s=2
-return A.x(A.ahQ(".env.local"),$async$agY)
+return A.x(A.ahQ(".env.prod"),$async$agY)
 case 2:s=3
 return A.x(A.EL(),$async$agY)
 case 3:q=$.aK
@@ -99892,9 +99892,9 @@ BL(){var s=0,r=A.v(t.CH),q,p=2,o=[],n=this,m,l,k,j,i
 var $async$BL=A.q(function(a,b){if(a===1){o.push(b)
 s=p}while(true)switch(s){case 0:p=4
 l=n.b
-k=$.hy().gci().i(0,"MQTT_PORT")
+k=$.hy().gci().i(0,"MQTT_PORT_WEB")
 k=A.oS(k==null?"":k,null)
-l.b=k==null?1883:k
+l.b=k==null?8000:k
 k=n.a
 l.a=k.c.ga1P()
 l.e=!0
@@ -101750,8 +101750,8 @@ return"Erro: "+r.a}else return"Ocorreu um erro inesperado. Por favor, contate o 
 A.xU.prototype={
 gci(){var s=$.hy().gci().i(0,"ENV")
 return s==null?"local":s},
-ga1P(){var s=$.hy().gci().i(0,"MQTT_HOST")
-return s==null?"localhost":s},
+ga1P(){var s=$.hy().gci().i(0,"MQTT_HOST_WEB")
+return s==null?"ws://localhost":s},
 ga_x(){var s=$.hy().gci().i(0,"EMQX_API_BASE_URL")
 return s==null?"http://localhost:18083/api/v5":s},
 gK1(){var s=$.hy().gci().i(0,"COMPANY_ROUTE")
